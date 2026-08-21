@@ -1,0 +1,19 @@
+{
+  "appId": "com.workbench.standalone",
+  "productName": "工作台单机版",
+  "directories": { "output": "dist" },
+  "files": ["main.js", "standalone.html"],
+  "win": {
+    "target": ["portable"],
+    "icon": "icon.ico"
+  },
+  "mac": {
+    "target": ["dmg", "portable"],
+    "icon": "icon.icns",
+    "category": "public.app-category.productivity"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "icon": "icon.png"
+  }
+}
