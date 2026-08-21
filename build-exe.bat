@@ -7,7 +7,7 @@ echo [1/2] 安装依赖...
 call npm install
 
 echo [2/2] 打包为 Windows .exe (便携版)...
-npx electron-builder --win --x64 portable
+npx electron-builder --win --x64
 
 echo.
 echo 完成! 可在 dist\ 目录下找到 exe 文件。
