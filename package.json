@@ -1,0 +1,18 @@
+{
+  "name": "workbench-standalone",
+  "version": "1.0.0",
+  "description": "工作台单机版 - Electron 封装",
+  "main": "main.js",
+  "author": "workbench",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build:exe": "electron-builder --win --x64 portable --config ./builder.json",
+    "build:app": "electron-builder --mac --x64 --config ./builder.json",
+    "build:portable-mac": "electron-builder --mac --x64 portable --config ./builder.json"
+  },
+  "devDependencies": {
+    "electron": "^28.2.8",
+    "electron-builder": "^24.13.3"
+  }
+}
